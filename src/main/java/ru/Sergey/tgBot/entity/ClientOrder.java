@@ -1,20 +1,14 @@
 package ru.Sergey.tgBot.entity;
 import jakarta.persistence.*;
 
-@Entity
 @Table(name = "client_orders")
 public class ClientOrder {
-    @Id
-    @GeneratedValue
     private Long id;
 
-    @ManyToOne
     private Client client;
 
-    @Column(nullable = false)
     private Integer status;
 
-    @Column(nullable = false)
     private Double total;
 
 

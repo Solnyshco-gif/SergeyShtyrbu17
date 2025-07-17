@@ -1,23 +1,16 @@
 package ru.Sergey.tgBot.entity;
 import jakarta.persistence.*;
 
-@Entity
 @Table(name = "clients")
 public class Client {
-    @Id
-    @GeneratedValue
     private Long id;
 
-    @Column(nullable = false, unique = true)
     private Long externalId;
 
-    @Column(nullable = false, length = 255)
     private String fullName;
 
-    @Column(nullable = false, length = 15)
     private String phoneNumber;
 
-    @Column(nullable = false, length = 400)
     private String address;
 
 

@@ -1,19 +1,13 @@
 package ru.Sergey.tgBot.entity;
 import jakarta.persistence.*;
 
-@Entity
 @Table(name = "categories")
 public class Category {
 
-    @Id
-    @GeneratedValue
     private Long id;
 
-    @Column(nullable = false, length = 50, unique = true)
     private String name;
 
-    @ManyToOne
-    @JoinColumn(name = "parent_id")
     private Category parent;
 
     public Category() {}
