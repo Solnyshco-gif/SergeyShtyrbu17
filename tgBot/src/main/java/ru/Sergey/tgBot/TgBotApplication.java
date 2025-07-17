@@ -1,4 +1,4 @@
-package ru.SergeyShtyrbu.tgBot;
+package ru.Sergey.tgBot;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
