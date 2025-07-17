@@ -1,0 +1,15 @@
+ru\Sergey\tgBot\repository\ClientRepository.class
+ru\Sergey\tgBot\service\EntitiesServiceImpl.class
+ru\Sergey\tgBot\entity\Client.class
+ru\Sergey\tgBot\repository\OrderProductRepository.class
+ru\Sergey\tgBot\entity\ClientOrder.class
+ru\Sergey\tgBot\repository\CategoryRepository.class
+ru\Sergey\tgBot\entity\Category.class
+ru\Sergey\tgBot\entity\OrderProduct.class
+ru\Sergey\tgBot\rest\ProductRestController.class
+ru\Sergey\tgBot\TgBotApplication.class
+ru\Sergey\tgBot\repository\ProductRepository.class
+ru\Sergey\tgBot\repository\ClientOrderRepository.class
+ru\Sergey\tgBot\entity\Product.class
+ru\Sergey\tgBot\service\EntitiesService.class
+ru\Sergey\tgBot\rest\ClientRestController.class
