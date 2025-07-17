@@ -5,6 +5,15 @@ target/
 !**/src/main/**/target/
 !**/src/test/**/target/
 
+# IntelliJ IDEA
+.idea
+*.iws
+*.iml
+*.ipr
+*.cmd
+.mvn/
+mvnw
+
 # STS
 .apt_generated
 .classpath
@@ -34,7 +43,7 @@ build/
 !**/src/test/**/build/
 
 # VS Code
-.vscode
+.vscode/
 
 # Java и пакеты
 *.class
