@@ -1,18 +1,6 @@
 package ru.Sergey.tgBot.entity;
 import jakarta.persistence.*;
 
-<<<<<<< HEAD
-@Table(name = "clients")
-public class Client {
-    private Long id;
-
-    private Long externalId;
-
-    private String fullName;
-
-    private String phoneNumber;
-
-=======
 @Entity
 @Table(name = "clients")
 public class Client {
@@ -30,7 +18,6 @@ public class Client {
     private String phoneNumber;
 
     @Column(nullable = false, length = 400)
->>>>>>> practical_task_3
     private String address;
 
 
