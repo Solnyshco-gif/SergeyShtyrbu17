@@ -1,6 +1,7 @@
 package ru.Sergey.tgBot.entity;
 import jakarta.persistence.*;
 
+<<<<<<< HEAD
 @Table(name = "order_products")
 public class OrderProduct {
     private Long id;
@@ -9,6 +10,22 @@ public class OrderProduct {
 
     private Product product;
 
+=======
+@Entity
+@Table(name = "order_products")
+public class OrderProduct {
+    @Id
+    @GeneratedValue
+    private Long id;
+
+    @ManyToOne
+    private ClientOrder clientOrder;
+
+    @ManyToOne
+    private Product product;
+
+    @Column(nullable = false)
+>>>>>>> practical_task_3
     private Integer countProduct;
 
     public OrderProduct() {}

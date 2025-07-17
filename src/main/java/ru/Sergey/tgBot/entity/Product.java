@@ -1,6 +1,7 @@
 package ru.Sergey.tgBot.entity;
 import jakarta.persistence.*;
 
+<<<<<<< HEAD
 @Table(name = "products")
 public class Product {
     private Long id;
@@ -11,6 +12,25 @@ public class Product {
 
     private String description;
 
+=======
+@Entity
+@Table(name = "products")
+public class Product {
+    @Id
+    @GeneratedValue
+    private Long id;
+
+    @ManyToOne
+    private Category category;
+
+    @Column(nullable = false, length = 50, unique = true)
+    private String name;
+
+    @Column(nullable = false, length = 400)
+    private String description;
+
+    @Column(nullable = false)
+>>>>>>> practical_task_3
     private Double price;
 
 

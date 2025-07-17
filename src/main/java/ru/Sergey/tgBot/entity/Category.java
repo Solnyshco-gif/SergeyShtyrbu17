@@ -1,6 +1,7 @@
 package ru.Sergey.tgBot.entity;
 import jakarta.persistence.*;
 
+<<<<<<< HEAD
 @Table(name = "categories")
 public class Category {
 
@@ -8,6 +9,21 @@ public class Category {
 
     private String name;
 
+=======
+@Entity
+@Table(name = "categories")
+public class Category {
+
+    @Id
+    @GeneratedValue
+    private Long id;
+
+    @Column(nullable = false, length = 50, unique = true)
+    private String name;
+
+    @ManyToOne
+    @JoinColumn(name = "parent_id")
+>>>>>>> practical_task_3
     private Category parent;
 
     public Category() {}
